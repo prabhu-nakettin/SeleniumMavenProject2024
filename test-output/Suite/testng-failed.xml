@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test3(failed)">
+    <classes>
+      <class name="Assignment.AddToCardIcon">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="addToCart"/>
+        </methods>
+      </class> <!-- Assignment.AddToCardIcon -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+  <test thread-count="5" parallel="tests" name="Test1(failed)">
+    <classes>
+      <class name="Assignment.ValidLogin">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="validLogin"/>
+          <include name="invalidTestData"/>
+        </methods>
+      </class> <!-- Assignment.ValidLogin -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
